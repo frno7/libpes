@@ -315,7 +315,7 @@ Type | Bytes | Value | Description
 
 #### PEC stitch list subsection
 
-The PEC stitch list come in dx and dy relative coordinate pairs. Depending on the bit patterns used, 2, 3 or 4 bytes are used for the coordinate pairs as explained below. Note that if the first coordinates are (0, 0) the embroidery machine apparently ignores them.
+The PEC stitch list come in dx and dy relative coordinate pairs. Depending on the bit patterns used, 2, 3 or 4 bytes are used for the coordinate pairs as explained below. Note that if the first coordinates are (0, 0) the embroidery machine apparently ignores them. The first nonzero coordinate pair is relative to the minimum bound coordinates.
 
 Type | Bytes | Value | Description
 --- | ---: | --- | ---

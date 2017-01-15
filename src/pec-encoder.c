@@ -165,7 +165,8 @@ static bool encode_stitch(const struct pec_encoder * const encoder,
 static bool encode_stitch_list(const struct pec_encoder * const encoder,
 	const pec_encode_callback encode_cb, void * const arg)
 {
-	int x = 0, y = 0;
+	int x = pec_raw_coordinate(encoder->bounds.min_x);
+	int y = pec_raw_coordinate(encoder->bounds.min_y);
 
 	for (int i = 0, stop = 2; i < encoder->stitch_count; i++) {
 		const enum pec_stitch_type type = encoder->stitch_list[i].type;
