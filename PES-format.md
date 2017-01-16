@@ -338,70 +338,69 @@ There is always one main thumbnail image plus one for each color. The size of ea
 
 The following 64 threads have been verified with a Brother Innovis 955 sewing and embroidery machine and its “EMBROIDERY” thread space.
 
-<table>
-<tr><th>Index</th><th>Code</th><th>Name</th><th>Type</th><th>RGB color</th><th>Color</th>
-<tr><td style="text-align: right"> 1</td><td>007</td><td>Prussian Blue    </td><td>A</td><td>#1a0a94</td><td style="background-color: #1a0a94"></td></tr>
-<tr><td style="text-align: right"> 2</td><td>000</td><td>Blue             </td><td>A</td><td>#0f75ff</td><td style="background-color: #0f75ff"></td></tr>
-<tr><td style="text-align: right"> 3</td><td>534</td><td>Teal Green       </td><td>A</td><td>#00934c</td><td style="background-color: #00934c"></td></tr>
-<tr><td style="text-align: right"> 4</td><td>070</td><td>Corn Flower Blue </td><td>A</td><td>#babdfe</td><td style="background-color: #babdfe"></td></tr>
-<tr><td style="text-align: right"> 5</td><td>800</td><td>Red              </td><td>A</td><td>#ec0000</td><td style="background-color: #ec0000"></td></tr>
-<tr><td style="text-align: right"> 6</td><td>000</td><td>Reddish Brown    </td><td>A</td><td>#e4995a</td><td style="background-color: #e4995a"></td></tr>
-<tr><td style="text-align: right"> 7</td><td>620</td><td>Magenta          </td><td>A</td><td>#cc48ab</td><td style="background-color: #cc48ab"></td></tr>
-<tr><td style="text-align: right"> 8</td><td>810</td><td>Light Lilac      </td><td>A</td><td>#fdc4fa</td><td style="background-color: #fdc4fa"></td></tr>
-<tr><td style="text-align: right"> 9</td><td>000</td><td>Lilac            </td><td>A</td><td>#dd84cd</td><td style="background-color: #dd84cd"></td></tr>
-<tr><td style="text-align: right">10</td><td>502</td><td>Mint Green       </td><td>A</td><td>#6bd38a</td><td style="background-color: #6bd38a"></td></tr>
-<tr><td style="text-align: right">11</td><td>214</td><td>Deep Gold        </td><td>A</td><td>#e4a945</td><td style="background-color: #e4a945"></td></tr>
-<tr><td style="text-align: right">12</td><td>208</td><td>Orange           </td><td>A</td><td>#ffbd42</td><td style="background-color: #ffbd42"></td></tr>
-<tr><td style="text-align: right">13</td><td>000</td><td>Yellow           </td><td>A</td><td>#ffe600</td><td style="background-color: #ffe600"></td></tr>
-<tr><td style="text-align: right">14</td><td>513</td><td>Lime Green       </td><td>A</td><td>#6cd900</td><td style="background-color: #6cd900"></td></tr>
-<tr><td style="text-align: right">15</td><td>328</td><td>Brass            </td><td>A</td><td>#c1a941</td><td style="background-color: #c1a941"></td></tr>
-<tr><td style="text-align: right">16</td><td>005</td><td>Silver           </td><td>A</td><td>#b5ad97</td><td style="background-color: #b5ad97"></td></tr>
-<tr><td style="text-align: right">17</td><td>000</td><td>Russet Brown     </td><td>A</td><td>#ba9c5f</td><td style="background-color: #ba9c5f"></td></tr>
-<tr><td style="text-align: right">18</td><td>000</td><td>Cream Brown      </td><td>A</td><td>#faf59e</td><td style="background-color: #faf59e"></td></tr>
-<tr><td style="text-align: right">19</td><td>704</td><td>Pewter           </td><td>A</td><td>#808080</td><td style="background-color: #808080"></td></tr>
-<tr><td style="text-align: right">20</td><td>900</td><td>Black            </td><td>A</td><td>#000000</td><td style="background-color: #000000"></td></tr>
-<tr><td style="text-align: right">21</td><td>000</td><td>Ultramarine      </td><td>A</td><td>#001cdf</td><td style="background-color: #001cdf"></td></tr>
-<tr><td style="text-align: right">22</td><td>000</td><td>Royal Purple     </td><td>A</td><td>#df00b8</td><td style="background-color: #df00b8"></td></tr>
-<tr><td style="text-align: right">23</td><td>707</td><td>Dark Gray        </td><td>A</td><td>#626262</td><td style="background-color: #626262"></td></tr>
-<tr><td style="text-align: right">24</td><td>058</td><td>Dark Brown       </td><td>A</td><td>#69260d</td><td style="background-color: #69260d"></td></tr>
-<tr><td style="text-align: right">25</td><td>086</td><td>Deep Rose        </td><td>A</td><td>#ff0060</td><td style="background-color: #ff0060"></td></tr>
-<tr><td style="text-align: right">26</td><td>323</td><td>Light Brown      </td><td>A</td><td>#bf8200</td><td style="background-color: #bf8200"></td></tr>
-<tr><td style="text-align: right">27</td><td>079</td><td>Salmon Pink      </td><td>A</td><td>#f39178</td><td style="background-color: #f39178"></td></tr>
-<tr><td style="text-align: right">28</td><td>000</td><td>Vermilion        </td><td>A</td><td>#ff6805</td><td style="background-color: #ff6805"></td></tr>
-<tr><td style="text-align: right">29</td><td>001</td><td>White            </td><td>A</td><td>#f0f0f0</td><td style="background-color: #f0f0f0"></td></tr>
-<tr><td style="text-align: right">30</td><td>000</td><td>Violet           </td><td>A</td><td>#c832cd</td><td style="background-color: #c832cd"></td></tr>
-<tr><td style="text-align: right">31</td><td>000</td><td>Seacrest         </td><td>A</td><td>#b0bf9b</td><td style="background-color: #b0bf9b"></td></tr>
-<tr><td style="text-align: right">32</td><td>019</td><td>Sky Blue         </td><td>A</td><td>#65bfeb</td><td style="background-color: #65bfeb"></td></tr>
-<tr><td style="text-align: right">33</td><td>000</td><td>Pumpkin          </td><td>A</td><td>#ffba04</td><td style="background-color: #ffba04"></td></tr>
-<tr><td style="text-align: right">34</td><td>010</td><td>Cream Yellow     </td><td>A</td><td>#fff06c</td><td style="background-color: #fff06c"></td></tr>
-<tr><td style="text-align: right">35</td><td>000</td><td>Khaki            </td><td>A</td><td>#feca15</td><td style="background-color: #feca15"></td></tr>
-<tr><td style="text-align: right">36</td><td>000</td><td>Clay Brown       </td><td>A</td><td>#f38101</td><td style="background-color: #f38101"></td></tr>
-<tr><td style="text-align: right">37</td><td>000</td><td>Leaf Green       </td><td>A</td><td>#37a923</td><td style="background-color: #37a923"></td></tr>
-<tr><td style="text-align: right">38</td><td>405</td><td>Peacock Blue     </td><td>A</td><td>#23465f</td><td style="background-color: #23465f"></td></tr>
-<tr><td style="text-align: right">39</td><td>000</td><td>Gray             </td><td>A</td><td>#a6a695</td><td style="background-color: #a6a695"></td></tr>
-<tr><td style="text-align: right">40</td><td>000</td><td>Warm Gray        </td><td>A</td><td>#cebfa6</td><td style="background-color: #cebfa6"></td></tr>
-<tr><td style="text-align: right">41</td><td>000</td><td>Dark Olive       </td><td>A</td><td>#96aa02</td><td style="background-color: #96aa02"></td></tr>
-<tr><td style="text-align: right">42</td><td>307</td><td>Linen            </td><td>A</td><td>#ffe3c6</td><td style="background-color: #ffe3c6"></td></tr>
-<tr><td style="text-align: right">43</td><td>000</td><td>Pink             </td><td>A</td><td>#ff99d7</td><td style="background-color: #ff99d7"></td></tr>
-<tr><td style="text-align: right">44</td><td>000</td><td>Deep Green       </td><td>A</td><td>#007004</td><td style="background-color: #007004"></td></tr>
-<tr><td style="text-align: right">45</td><td>000</td><td>Lavender         </td><td>A</td><td>#edccfb</td><td style="background-color: #edccfb"></td></tr>
-<tr><td style="text-align: right">46</td><td>000</td><td>Wisteria Violet  </td><td>A</td><td>#c089d8</td><td style="background-color: #c089d8"></td></tr>
-<tr><td style="text-align: right">47</td><td>843</td><td>Beige            </td><td>A</td><td>#e7d9b4</td><td style="background-color: #e7d9b4"></td></tr>
-<tr><td style="text-align: right">48</td><td>000</td><td>Carmine          </td><td>A</td><td>#e90e86</td><td style="background-color: #e90e86"></td></tr>
-<tr><td style="text-align: right">49</td><td>000</td><td>Amber Red        </td><td>A</td><td>#cf6829</td><td style="background-color: #cf6829"></td></tr>
-<tr><td style="text-align: right">50</td><td>000</td><td>Olive Green      </td><td>A</td><td>#408615</td><td style="background-color: #408615"></td></tr>
-<tr><td style="text-align: right">51</td><td>107</td><td>Dark Fuchsia     </td><td>A</td><td>#db1797</td><td style="background-color: #db1797"></td></tr>
-<tr><td style="text-align: right">52</td><td>209</td><td>Tangerine        </td><td>A</td><td>#ffa704</td><td style="background-color: #ffa704"></td></tr>
-<tr><td style="text-align: right">53</td><td>017</td><td>Light Blue       </td><td>A</td><td>#b9ffff</td><td style="background-color: #b9ffff"></td></tr>
-<tr><td style="text-align: right">54</td><td>507</td><td>Emerald Green    </td><td>A</td><td>#228927</td><td style="background-color: #228927"></td></tr>
-<tr><td style="text-align: right">55</td><td>614</td><td>Purple           </td><td>A</td><td>#b612cd</td><td style="background-color: #b612cd"></td></tr>
-<tr><td style="text-align: right">56</td><td>515</td><td>Moss Green       </td><td>A</td><td>#00aa00</td><td style="background-color: #00aa00"></td></tr>
-<tr><td style="text-align: right">57</td><td>124</td><td>Flesh Pink       </td><td>A</td><td>#fea9dc</td><td style="background-color: #fea9dc"></td></tr>
-<tr><td style="text-align: right">58</td><td>000</td><td>Harvest Gold     </td><td>A</td><td>#fed510</td><td style="background-color: #fed510"></td></tr>
-<tr><td style="text-align: right">59</td><td>000</td><td>Electric Blue    </td><td>A</td><td>#0097df</td><td style="background-color: #0097df"></td></tr>
-<tr><td style="text-align: right">60</td><td>205</td><td>Lemon Yellow     </td><td>A</td><td>#ffff84</td><td style="background-color: #ffff84"></td></tr>
-<tr><td style="text-align: right">61</td><td>027</td><td>Fresh Green      </td><td>A</td><td>#cfe774</td><td style="background-color: #cfe774"></td></tr>
-<tr><td style="text-align: right">62</td><td>000</td><td>Applique Material</td><td>A</td><td>#ffc864</td><td style="background-color: #ffc864"></td></tr>
-<tr><td style="text-align: right">63</td><td>000</td><td>Applique Position</td><td>A</td><td>#ffc8c8</td><td style="background-color: #ffc8c8"></td></tr>
-<tr><td style="text-align: right">64</td><td>000</td><td>Applique         </td><td>A</td><td>#ffc8c8</td><td style="background-color: #ffc8c8"></td></tr>
-</table>
+Index | Code | Name | Type | RGB color
+---: | --- | --- | --- | ---
+ 1 | 007 | Prussian Blue     | A | #1a0a94
+ 2 | 000 | Blue              | A | #0f75ff
+ 3 | 534 | Teal Green        | A | #00934c
+ 4 | 070 | Corn Flower Blue  | A | #babdfe
+ 5 | 800 | Red               | A | #ec0000
+ 6 | 000 | Reddish Brown     | A | #e4995a
+ 7 | 620 | Magenta           | A | #cc48ab
+ 8 | 810 | Light Lilac       | A | #fdc4fa
+ 9 | 000 | Lilac             | A | #dd84cd
+10 | 502 | Mint Green        | A | #6bd38a
+11 | 214 | Deep Gold         | A | #e4a945
+12 | 208 | Orange            | A | #ffbd42
+13 | 000 | Yellow            | A | #ffe600
+14 | 513 | Lime Green        | A | #6cd900
+15 | 328 | Brass             | A | #c1a941
+16 | 005 | Silver            | A | #b5ad97
+17 | 000 | Russet Brown      | A | #ba9c5f
+18 | 000 | Cream Brown       | A | #faf59e
+19 | 704 | Pewter            | A | #808080
+20 | 900 | Black             | A | #000000
+21 | 000 | Ultramarine       | A | #001cdf
+22 | 000 | Royal Purple      | A | #df00b8
+23 | 707 | Dark Gray         | A | #626262
+24 | 058 | Dark Brown        | A | #69260d
+25 | 086 | Deep Rose         | A | #ff0060
+26 | 323 | Light Brown       | A | #bf8200
+27 | 079 | Salmon Pink       | A | #f39178
+28 | 000 | Vermilion         | A | #ff6805
+29 | 001 | White             | A | #f0f0f0
+30 | 000 | Violet            | A | #c832cd
+31 | 000 | Seacrest          | A | #b0bf9b
+32 | 019 | Sky Blue          | A | #65bfeb
+33 | 000 | Pumpkin           | A | #ffba04
+34 | 010 | Cream Yellow      | A | #fff06c
+35 | 000 | Khaki             | A | #feca15
+36 | 000 | Clay Brown        | A | #f38101
+37 | 000 | Leaf Green        | A | #37a923
+38 | 405 | Peacock Blue      | A | #23465f
+39 | 000 | Gray              | A | #a6a695
+40 | 000 | Warm Gray         | A | #cebfa6
+41 | 000 | Dark Olive        | A | #96aa02
+42 | 307 | Linen             | A | #ffe3c6
+43 | 000 | Pink              | A | #ff99d7
+44 | 000 | Deep Green        | A | #007004
+45 | 000 | Lavender          | A | #edccfb
+46 | 000 | Wisteria Violet   | A | #c089d8
+47 | 843 | Beige             | A | #e7d9b4
+48 | 000 | Carmine           | A | #e90e86
+49 | 000 | Amber Red         | A | #cf6829
+50 | 000 | Olive Green       | A | #408615
+51 | 107 | Dark Fuchsia      | A | #db1797
+52 | 209 | Tangerine         | A | #ffa704
+53 | 017 | Light Blue        | A | #b9ffff
+54 | 507 | Emerald Green     | A | #228927
+55 | 614 | Purple            | A | #b612cd
+56 | 515 | Moss Green        | A | #00aa00
+57 | 124 | Flesh Pink        | A | #fea9dc
+58 | 000 | Harvest Gold      | A | #fed510
+59 | 000 | Electric Blue     | A | #0097df
+60 | 205 | Lemon Yellow      | A | #ffff84
+61 | 027 | Fresh Green       | A | #cfe774
+62 | 000 | Applique Material | A | #ffc864
+63 | 000 | Applique Position | A | #ffc8c8
+64 | 000 | Applique          | A | #ffc8c8
