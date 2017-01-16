@@ -12,6 +12,7 @@ The PEC format is embedded within the PES format, and so the same sewing coordin
   - [Header section](#header-section)
     - [Version 1 header section](#version-1-header-section)
     - [Version 2 header section](#version-2-header-section)
+    - [Version 3 header section](#version-3-header-section)
     - [Version 4 header section](#version-4-header-section)
     - [Version 5 header section](#version-5-header-section)
     - [Version 6 header section](#version-6-header-section)
@@ -89,6 +90,30 @@ Type | Bytes | Value | Description
 `char` | 4 | `"#PES"` | Identification
 `char` | 4 | `"0002"` \| `"0020"` \| ? | Version 2
 `u32` | 4 | | Absolute PEC section byte offset
+`u16` | 2 | | Hoop width [millimeter]
+`u16` | 2 | | Hoop height [millimeter]
+`u16` | 2 | | Unknown, sewing area?
+`u16` | 2 | | Unknown, design page background color?
+`u16` | 2 | | Unknown, design page foreground color?
+`u16` | 2 | | Unknown, show grid?
+`u16` | 2 | | Unknown, with axes?
+`u16` | 2 | | Unknown, snap to grid?
+`u16` | 2 | | Unknown, grid interval?
+`u16` | 2 | | Unknown, P9 curves?
+`u16` | 2 | | Unknown, optimize entry-exit points?
+`u16` | 2 | `0xFFFF` (typical) | Unknown
+`u16` | 2 | `0` (typical) | Unknown
+
+#### Version 3 header section
+
+Type | Bytes | Value | Description
+--- | ---: | --- | ---
+`char` | 4 | `"#PES"` | Identification
+`char` | 4 | `"0003"` \| `"0030"` \| ? | Version 3
+`u32` | 4 | | Absolute PEC section byte offset
+`u16` | 2 | `1` (typical) | Unknown
+`u8` | 1 | `0x30` (typical) | Unknown
+`u8` | 1 | `0x31` \| `0x32` \| ? | Unknown
 `u16` | 2 | | Hoop width [millimeter]
 `u16` | 2 | | Hoop height [millimeter]
 `u16` | 2 | | Unknown, sewing area?
