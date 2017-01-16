@@ -14,6 +14,7 @@ The PEC format is embedded within the PES format, and so the same sewing coordin
     - [Version 4 header section](#version-4-header-section)
     - [Version 5 header section](#version-5-header-section)
     - [Version 6 header section](#version-6-header-section)
+    - [Description strings subsection](#description-strings-subsection)
     - [Color list subsection](#color-list-subsection)
     - [Color subsection](#color-subsection)
   - [CEmbOne section](#cembone-section)
@@ -90,9 +91,8 @@ Type | Bytes | Value | Description
 `u16` | 2 | `1` (typical) | Unknown
 `u8` | 1 | `0x30` (typical) | Unknown
 `u8` | 1 | `0x31` \| `0x32` \| ? | Unknown
-`u8` | 1 | S1 | Length of following string
-`char` | S1 | | Description string
-| `u8` | 6 | `0` (typical) | Unknown
+`description_strings` | | | Description strings
+`u8` | 2 | `0` (typical) | Unknown
 `u16` | 2 | | Hoop width [millimeter]
 `u16` | 2 | | Hoop height [millimeter]
 `u16` | 2 | `0` (typical) | Unknown
@@ -118,9 +118,8 @@ Type | Bytes | Value | Description
 `u16` | 2 | `1` (typical) | Unknown
 `u8` | 1 | `0x30` (typical) | Unknown
 `u8` | 1 | `0x31` \| `0x32` \| ? | Unknown
-`u8` | 1 | S1 | Length of following string
-`char` | S1 | | Description string
-| `u8` | 6 | `0` (typical) | Unknown
+`description_strings` | | | Description strings
+`u8` | 2 | `0` (typical) | Unknown
 `u16` | 2 | | Hoop width [millimeter]
 `u16` | 2 | | Hoop height [millimeter]
 `u16` | 2 | `0` (typical) | Unknown
@@ -151,9 +150,8 @@ Type | Bytes | Value | Description
 `u16` | 2 | `1` (typical) | Unknown
 `u8` | 1 | `0x30` (typical) | Unknown
 `u8` | 1 | `0x31` \| `0x32` \| ? | Unknown
-`u8` | 1 | S1 | Length of following string
-`char` | S1 | | Description string
-| `u8` | 8 | `0` (typical) | Unknown
+`description_strings` | | | Description strings
+| `u8` | 4 | `0` (typical) | Unknown
 `u16` | 2 | | Hoop width [millimeter]
 `u16` | 2 | | Hoop height [millimeter]
 `u16` | 2 | `0` (typical) | Unknown
@@ -178,6 +176,21 @@ Type | Bytes | Value | Description
 `u16` | 2 | `1` (typical) | Unknown
 `u16` | 2 | `0xFFFF` (typical) | Unknown
 `u16` | 2 | `0` (typical) | Unknown
+
+#### Description strings subsection
+
+Type | Bytes | Value | Description
+--- | ---: | --- | ---
+`u8` | 1 | S1 | Length of following string
+`char` | S1 | | Design string
+`u8` | 1 | S2 | Length of following string
+`char` | S2 | | Category string
+`u8` | 1 | S3 | Length of following string
+`char` | S3 | | Author string
+`u8` | 1 | S4 | Length of following string
+`char` | S4 | | Keywords string
+`u8` | 1 | S5 | Length of following string
+`char` | S5 | | Comments string
 
 #### Color list subsection
 
