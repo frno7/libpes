@@ -52,7 +52,7 @@ Type | Bytes |Description
 
 ## Sections
 
-Section sizes are often variable in length and therefore many parts cannot be located at a fixed byte offset. PES versions 1 and 4 and PEC have a fixed predefined palette of 65 threads. PES versions 5 and 6 replace this with configurable threads.
+Section sizes are often variable in length and therefore many parts cannot be located at a fixed byte offset. PES versions 1 and 4 and PEC have a fixed predefined palette of 64 threads. PES versions 5 and 6 replace this with configurable threads.
 
 Section | Description
 --- | ---
@@ -318,7 +318,7 @@ Type | Bytes | Value | Description
 `u16` | 2 | `0` \| `1` \| ? | Stitch type where `0` means a normal stitch and `1` means a jump stitch
 `u16` | 2 | | Thread index for block + 1
 `u16` | 2 | N1 | Number of following coordinates
-`csewseg_coordinates` | 4 × N1 | | CSewSeg coordinate subsection
+`csewseg_coordinates` | 4×N1 | | CSewSeg coordinate subsection
 `u16` | 2 | `0x8003` \| ? | Continuation code where `0x8003` means list continues with another following block, with the last block not having this field at all
 
 #### CSewSeg coordinate subsection
@@ -333,7 +333,7 @@ Type | Bytes | Value | Description
 Type | Bytes | Value | Description
 --- | ---: | --- | ---
 `u16` | 2 | N1 | Number of following colors
-`csewseg_color` | 4 × N1 | | CSewSeg color subsection
+`csewseg_color` | 4×N1 | | CSewSeg color subsection
 `u16` | 2 | `0` (typical) | Unknown
 `u16` | 2 | `0` (typical) | Unknown
 
