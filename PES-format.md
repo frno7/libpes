@@ -17,6 +17,7 @@ The PEC format is embedded within the PES format, and so the same sewing coordin
     - [Version 5 header section](#version-5-header-section)
     - [Version 6 header section](#version-6-header-section)
     - [Description strings subsection](#description-strings-subsection)
+    - [Affine transform subsection](#affine-transform-subsection)
     - [Color list subsection](#color-list-subsection)
     - [Color subsection](#color-subsection)
   - [CEmbOne section](#cembone-section)
@@ -178,10 +179,8 @@ Type | Bytes | Value | Description
 `u16` | 2 | `100` (typical) | Unknown, grid interval?
 `u8` | 1 | `1` (typical) | Unknown
 `u8` | 4 | `0` (typical) | Unknown
-`f32` | 4 | `1.0f` (typical) | Unknown
-`u8` | 8 | `0` (typical) | Unknown
-`f32` | 4 | `1.0f` (typical) | Unknown
-`u8` | 14 | `0` (typical) | Unknown
+`affine_transform` | 24 | | Affine transform
+`u8` | 6 | `0` (typical) | Unknown
 `color_list` | | | Color list subsection
 `u16` | 2 | `1` (typical) | Unknown
 `u16` | 2 | `0xFFFF` (typical) | Unknown
@@ -216,10 +215,8 @@ Type | Bytes | Value | Description
 `u16` | 2 | `15` \| `100` \| ? | Unknown, grid interval?
 `u8` | 1 | `1` (typical) | Unknown
 `u8` | 4 | `0` (typical) | Unknown
-`f32` | 4 | `1.0f` (typical) | Unknown
-`u8` | 8 | `0` (typical) | Unknown
-`f32` | 4 | `1.0f` (typical) | Unknown
-`u8` | 14 | `0` (typical) | Unknown
+`affine_transform` | 24 | | Affine transform
+`u8` | 6 | `0` (typical) | Unknown
 `color_list` | | | Color list subsection
 `u16` | 2 | `1` (typical) | Unknown
 `u16` | 2 | `0xFFFF` (typical) | Unknown
@@ -239,6 +236,17 @@ Type | Bytes | Value | Description
 `char` | S4 | | Keywords string
 `u8` | 1 | S5 | Length of following string
 `char` | S5 | | Comments string
+
+#### Affine transform subsection
+
+Type | Bytes | Value | Description
+--- | ---: | --- | ---
+`f32` | 4 | `1.0f` (identity) | Row 1 column 1 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
+`f32` | 4 | `0.0f` (identity) | Row 2 column 1 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
+`f32` | 4 | `0.0f` (identity) | Row 1 column 2 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
+`f32` | 4 | `1.0f` (identity) | Row 2 column 2 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
+`f32` | 4 | `0.0f` (identity) | Row 1 column 3 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
+`f32` | 4 | `0.0f` (identity) | Row 2 column 3 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
 
 #### Color list subsection
 
@@ -281,12 +289,7 @@ Type | Bytes | Value | Description
 `s16` | 2 | | Minimum y coordinate in CSewSeg section (repeated?)
 `s16` | 2 | | Maximum x coordinate in CSewSeg section (repeated?)
 `s16` | 2 | | Maximum y coordinate in CSewSeg section (repeated?)
-`f32` | 4 | `1.0f` (identity) | Row 1 column 1 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
-`f32` | 4 | `0.0f` (identity) | Row 1 column 2 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
-`f32` | 4 | `0.0f` (identity) | Row 2 column 1 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
-`f32` | 4 | `1.0f` (identity) | Row 2 column 2 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
-`f32` | 4 | `0.0f` (identity) | Row 3 column 1 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
-`f32` | 4 | `0.0f` (identity) | Row 3 column 2 of [affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) matrix
+`affine_transform` | 24 | | Affine transform
 `u16` | 2 | `1` (typical) | Unknown
 `s16` | 2 | | CSewSeg x coordinate translation?
 `s16` | 2 | | CSewSeg x coordinate translation?
