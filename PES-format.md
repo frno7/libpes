@@ -142,13 +142,13 @@ Type | Bytes | Value | Description
 `u8` | 2 | `0` (typical) | Unknown
 `u16` | 2 | | Hoop width [millimeter]
 `u16` | 2 | | Hoop height [millimeter]
-`u16` | 2 | `0` (typical) | Unknown
-`u16` | 2 | `7` (typical) | Unknown
-`u16` | 2 | `19` (typical) | Unknown
-`u16` | 2 | `0` \| `1` \| ? | Unknown
-`u16` | 2 | `1` (typical) | Unknown
-`u16` | 2 | `0` \| `1` \| ? | Unknown
-`u16` | 2 | `100` (typical) | Unknown
+`u16` | 2 | `0` (typical) | Unknown, sewing area?
+`u16` | 2 | `7` (typical) | Unknown, design page background color?
+`u16` | 2 | `19` (typical) | Unknown, design page foreground color?
+`u16` | 2 | `0` \| `1` \| ? | Unknown, show grid?
+`u16` | 2 | `1` (typical) | Unknown, with axes?
+`u16` | 2 | `0` \| `1` \| ? | Unknown, snap to grid?
+`u16` | 2 | `100` (typical) | Unknown, grid interval?
 `u8` | 1 | `1` (typical) | Unknown
 `u8` | 7 | `0` (typical) | Unknown
 `u16` | 2 | `1` (typical) | Unknown
@@ -166,16 +166,16 @@ Type | Bytes | Value | Description
 `u8` | 1 | `0x30` (typical) | Unknown
 `u8` | 1 | `0x31` \| `0x32` \| ? | Unknown
 `description_strings` | | | Description strings
-`u8` | 2 | `0` (typical) | Unknown
+`u16` | 2 | `0` (typical) | Unknown, optimize hoop change?
 `u16` | 2 | | Hoop width [millimeter]
 `u16` | 2 | | Hoop height [millimeter]
-`u16` | 2 | `0` (typical) | Unknown
-`u16` | 2 | `7` (typical) | Unknown
-`u16` | 2 | `19` (typical) | Unknown
-`u16` | 2 | `0` \| `1` \| ? | Unknown
-`u16` | 2 | `1` (typical) | Unknown
-`u16` | 2 | `0` \| `1` \| ? | Unknown
-`u16` | 2 | `100` (typical) | Unknown
+`u16` | 2 | `0` (typical) | Unknown, sewing area?
+`u16` | 2 | `7` (typical) | Unknown, design page background color?
+`u16` | 2 | `19` (typical) | Unknown, design page foreground color?
+`u16` | 2 | `0` \| `1` \| ? | Unknown, show grid?
+`u16` | 2 | `1` (typical) | Unknown, with axes?
+`u16` | 2 | `0` \| `1` \| ? | Unknown, snap to grid?
+`u16` | 2 | `100` (typical) | Unknown, grid interval?
 `u8` | 1 | `1` (typical) | Unknown
 `u8` | 4 | `0` (typical) | Unknown
 `f32` | 4 | `1.0f` (typical) | Unknown
@@ -198,21 +198,22 @@ Type | Bytes | Value | Description
 `u8` | 1 | `0x30` (typical) | Unknown
 `u8` | 1 | `0x31` \| `0x32` \| ? | Unknown
 `description_strings` | | | Description strings
-| `u8` | 4 | `0` (typical) | Unknown
+`u16` | 2 | `0` (typical) | Unknown, optimize hoop change?
+`u16` | 2 | `0` (typical) | Unknown, design page is custom?
 `u16` | 2 | | Hoop width [millimeter]
 `u16` | 2 | | Hoop height [millimeter]
-`u16` | 2 | `0` (typical) | Unknown
+`u16` | 2 | `0` (typical) | Unknown, sewing area?
 `u16` | 2 | `200` (typical) | Unknown
 `u16` | 2 | `200` (typical) | Unknown
 `u16` | 2 | `100` (typical) | Unknown
 `u16` | 2 | `100` (typical) | Unknown
 `u16` | 2 | `100` (typical) | Unknown
-`u16` | 2 | `7` (typical) | Unknown
-`u16` | 2 | `19` (typical) | Unknown
-`u16` | 2 | `0` \| `1` \| ? | Unknown
-`u16` | 2 | `1` (typical) | Unknown
-`u16` | 2 | `0` (typical) | Unknown
-`u16` | 2 | `15` \| `100` \| ? | Unknown
+`u16` | 2 | `7` (typical) | Unknown, design page background color?
+`u16` | 2 | `19` (typical) | Unknown, design page foreground color?
+`u16` | 2 | `0` \| `1` \| ? | Unknown, show grid?
+`u16` | 2 | `1` (typical) | Unknown, with axes?
+`u16` | 2 | `0` (typical) | Unknown, snap to grid?
+`u16` | 2 | `15` \| `100` \| ? | Unknown, grid interval?
 `u8` | 1 | `1` (typical) | Unknown
 `u8` | 4 | `0` (typical) | Unknown
 `f32` | 4 | `1.0f` (typical) | Unknown
