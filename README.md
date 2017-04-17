@@ -10,7 +10,7 @@
 
 ## PES embroidery format description
 
-Check the [PES format description wiki](https://github.com/frno7/libpes/wiki/PES-format-description).
+Check the [PES format wiki](https://github.com/frno7/libpes/wiki/PES-format).
 
 ## SVG embroidery format
 
