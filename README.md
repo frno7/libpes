@@ -2,6 +2,9 @@
 
 `libpes` is a portable C library for encoding, decoding and transcoding the PES and SVG based machine embroidery formats. The PES format is a [machine embroidery](https://en.wikipedia.org/wiki/Machine_embroidery) file format for [Brother Industries](https://en.wikipedia.org/wiki/Brother_Industries) and [Bernina International](https://en.wikipedia.org/wiki/Bernina_International) series of embroidery machines, among others. PES files contain sewing coordinates for stitches and corresponding thread colors.
 
+## Build
+[![CMake](https://github.com/frno7/libpes/actions/workflows/cmake.yml/badge.svg)](https://github.com/frno7/libpes/actions/workflows/cmake.yml)
+
 ## Tools
 
 * `pes-info` prints out internal PES data structures for a given PES file.
