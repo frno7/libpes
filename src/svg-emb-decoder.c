@@ -124,7 +124,7 @@ static int find_thread_index(const struct svg_emb_decoder * const decoder,
 static bool parse_color(const struct sax_token color,
 	struct svg_emb_thread_state * const state)
 {
-	struct pec_rgb rgb = { };
+	struct pec_rgb rgb = { 0 };
 
 	if (!parse_rgb(color, &rgb)) {
 		thread_error_cb(color,
@@ -265,7 +265,7 @@ static bool path_cb(const struct sax_token attribute,
 			return false;
 		}
 	} else if (sax_strcmp(attribute, "stroke") == 0) {
-		struct pec_rgb rgb = { };
+		struct pec_rgb rgb = { 0 };
 
 		if (!parse_rgb(value, &rgb)) {
 			stitch_error_cb(value,

@@ -323,7 +323,7 @@ bool sax_parse_text(const char * const text,
 {
 	const struct sax_token t = { .row = 1, .column = 1, .index = 0,
 		.length = 1, .text = text, .cursor = text };
-	struct sax_state state = { };
+	struct sax_state state = { 0 };
 
 	return parse_text(t, NULL, &state, element_opening_cb,
 		element_closing_cb, attribute_cb, error_cb, arg);
@@ -344,7 +344,7 @@ bool sax_parse_children(struct sax_token element_token,
 	const sax_attribute_callback attribute_cb,
 	const sax_error_callback error_cb, void * const arg)
 {
-	struct sax_state state = { };
+	struct sax_state state = { 0 };
 	bool closed = false;
 
 	if (!parse_element(element_token, &element_token, &state,
@@ -364,7 +364,7 @@ bool sax_parse_siblings(struct sax_token element_token,
 	const sax_attribute_callback attribute_cb,
 	const sax_error_callback error_cb, void * const arg)
 {
-	struct sax_state state = { };
+	struct sax_state state = { 0 };
 	bool closed = false;
 
 	if (!parse_element(element_token, &element_token, &state,

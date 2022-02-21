@@ -100,7 +100,7 @@ static bool test_svg_transcoder()
 	/* FIXME: Test PEC coordinate decoder, including 12 bits */
 
 	for (int i = 0; versions[i].transcode != NULL; i++) {
-		struct buffer pes = { };
+		struct buffer pes = { 0 };
 
 		TEST_ASSERT(versions[i].transcode(xml, encoded_size, NULL, &pes.capacity));
 		pes.data = malloc(pes.capacity);

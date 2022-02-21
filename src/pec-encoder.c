@@ -304,7 +304,7 @@ static bool encode_thumbnail(const struct pec_encoder * const encoder,
 static bool encode_thumbnail_list(const struct pec_encoder * const encoder,
 	const pec_encode_callback encode_cb, void * const arg)
 {
-	struct pec_thumbnail thumbnail = { };
+	struct pec_thumbnail thumbnail = { 0 };
 
 	for (int k = 1; k < encoder->stitch_count; k++)
 		thumbnail_framed_line(&thumbnail, &encoder->stitch_list[k - 1],
