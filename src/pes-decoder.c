@@ -635,7 +635,7 @@ struct pes_transform pes_affine_transform(
 	const struct pes_decoder * const decoder)
 {
 	const float physical_translation_scale = pec_physical_coordinate(1);
-	struct pes_transform affine_transform = { };
+	struct pes_transform affine_transform = { 0 };
 
 	decode_f32lsb(decoder, decoder->cembone_offset + 25, &affine_transform.matrix[0][0]);
 	decode_f32lsb(decoder, decoder->cembone_offset + 29, &affine_transform.matrix[0][1]);
